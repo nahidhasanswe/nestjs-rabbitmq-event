@@ -1,0 +1,57 @@
+{
+  "name": "nestjs-rabbitmq-transport",
+  "version": "1.0.0",
+  "description": "RabbitMQ transport for NestJS microservices",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nestjs",
+    "rabbitmq",
+    "microservices",
+    "transport",
+    "amqp"
+  ],
+  "author": "Md Nahid Hasan",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.10.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nahidhasanswe/nestjs-rabbitmq-event.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nahidhasanswe/nestjs-rabbitmq-event/issues"
+  },
+  "homepage": "https://github.com/nahidhasanswe/nestjs-rabbitmq-event#readme",
+  "peerDependencies": {
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/microservices": "^11.1.6",
+    "rxjs": "^7.0.0"
+  },
+  "devDependencies": {
+     "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/microservices": "^11.1.6",
+    "@types/amqplib": "^0.10.0",
+    "typescript": "^4.7.0",
+    "@types/node": "^22.10.7",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2"
+  }
+}
